@@ -1,0 +1,1539 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_e5d0a09c8166ec892ac5680857d1640f {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+    <script src="https://cdn.jsdelivr.net/gh/marslan390/BeautifyMarker/leaflet-beautify-marker-icon.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/marslan390/BeautifyMarker/leaflet-beautify-marker-icon.min.css"/>
+</head>
+<body>
+    
+    
+<div style="position: fixed; bottom: 20px; left: 20px; z-index: 9999; background: white; padding: 10px 12px; border: 1px solid #999; border-radius: 8px; font-family: Georgia, serif;">
+  <div style="font-weight:700; margin-bottom:6px;">1775 Routes to the Second Continental Congress</div>
+  <div><span style="display:inline-block;width:12px;height:12px;background:#1e3a8a;margin-right:6px;"></span>Samuel Adams & John Hancock (pre‑Hartford)</div>
+  <div><span style="display:inline-block;width:12px;height:12px;background:#991b1b;margin-right:6px;"></span>John Adams (pre‑Hartford)</div>
+  <div><span style="display:inline-block;width:12px;height:12px;background:#0b5;margin-right:6px;"></span>Shared Corridor (Hartford → Philadelphia)</div>
+  <div style="margin-top:6px;font-size:12px;color:#555;">Click markers for dates, notes, and sources.</div>
+</div>
+    
+            <div class="folium-map" id="map_e5d0a09c8166ec892ac5680857d1640f" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_e5d0a09c8166ec892ac5680857d1640f = L.map(
+                "map_e5d0a09c8166ec892ac5680857d1640f",
+                {
+                    center: [41.5, -72.8],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 7,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_40edf5002ce5c25e51726551662137cf = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_e5d0a09c8166ec892ac5680857d1640f);
+        
+    
+            var marker_0003d21c1dad826c64b8aa8f2ca7b48d = L.marker(
+                [42.4528, -71.2223],
+                {}
+            ).addTo(map_e5d0a09c8166ec892ac5680857d1640f);
+        
+    
+            var beautify_icon_dfd978d405ee41c4f9065b08dd8048d2 = new L.BeautifyIcon.icon(
+                {"backgroundColor": "#1e3a8a", "borderColor": "#1e3a8a", "borderWidth": 3, "iconShape": "marker", "innerIconStyle": "", "isAlphaNumericIcon": true, "spin": false, "text": 1, "textColor": "white"}
+            )
+            marker_0003d21c1dad826c64b8aa8f2ca7b48d.setIcon(beautify_icon_dfd978d405ee41c4f9065b08dd8048d2);
+        
+    
+        var popup_043e56d88a8de873b4bc249c300ce6fe = L.popup({"maxWidth": 380});
+
+        
+            var html_9a02591356338c2bd166c3a0121de38f = $(`<div id="html_9a02591356338c2bd166c3a0121de38f" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Georgia, serif; font-size: 14px; line-height:1.35">       <div style="font-weight:700; font-size:16px; margin-bottom:4px;">Lexington, MA — Hancock-Clarke House (Parsonage)</div>       <div style="color:#333; margin-bottom:6px;"><i>Apr 18–19, 1775</i></div>       <div style="margin-bottom:6px;">Warned near midnight by Paul Revere and William Dawes at Rev. Jonas Clarke’s parsonage. <a href="https://www.nps.gov/mima/learn/historyculture/april-19-1775.htm" target="_blank">NPS Minute Man</a>.</div>       <div style="font-size:12px; color:#666;">Seq: 1</div>     </div>     </div>`)[0];
+            popup_043e56d88a8de873b4bc249c300ce6fe.setContent(html_9a02591356338c2bd166c3a0121de38f);
+        
+
+        marker_0003d21c1dad826c64b8aa8f2ca7b48d.bindPopup(popup_043e56d88a8de873b4bc249c300ce6fe)
+        ;
+
+        
+    
+    
+            marker_0003d21c1dad826c64b8aa8f2ca7b48d.bindTooltip(
+                `<div>
+                     Lexington, MA — Hancock-Clarke House (Parsonage)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_43d2ab5875e037f89abb104fd4565eee = L.marker(
+                [42.4495, -71.2316],
+                {}
+            ).addTo(map_e5d0a09c8166ec892ac5680857d1640f);
+        
+    
+            var beautify_icon_304593885c46fac8d83ba8316864f500 = new L.BeautifyIcon.icon(
+                {"backgroundColor": "#1e3a8a", "borderColor": "#1e3a8a", "borderWidth": 3, "iconShape": "marker", "innerIconStyle": "", "isAlphaNumericIcon": true, "spin": false, "text": 2, "textColor": "white"}
+            )
+            marker_43d2ab5875e037f89abb104fd4565eee.setIcon(beautify_icon_304593885c46fac8d83ba8316864f500);
+        
+    
+        var popup_d92ab0aa369ff08da2ec3ba754bc9ac7 = L.popup({"maxWidth": 380});
+
+        
+            var html_b039468d06d9b4cf264b0e90bc1a57fb = $(`<div id="html_b039468d06d9b4cf264b0e90bc1a57fb" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Georgia, serif; font-size: 14px; line-height:1.35">       <div style="font-weight:700; font-size:16px; margin-bottom:4px;">Lexington Green / Buckman Tavern</div>       <div style="color:#333; margin-bottom:6px;"><i>Apr 19, 1775</i></div>       <div style="margin-bottom:6px;">Militia mustered at Buckman Tavern before dawn skirmish on the Green. <a href="https://www.nps.gov/mima/learn/historyculture/april-19-1775.htm" target="_blank">NPS Minute Man</a>.</div>       <div style="font-size:12px; color:#666;">Seq: 2</div>     </div>     </div>`)[0];
+            popup_d92ab0aa369ff08da2ec3ba754bc9ac7.setContent(html_b039468d06d9b4cf264b0e90bc1a57fb);
+        
+
+        marker_43d2ab5875e037f89abb104fd4565eee.bindPopup(popup_d92ab0aa369ff08da2ec3ba754bc9ac7)
+        ;
+
+        
+    
+    
+            marker_43d2ab5875e037f89abb104fd4565eee.bindTooltip(
+                `<div>
+                     Lexington Green / Buckman Tavern
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_037f785aad976f24aa90c75e44164e2c = L.marker(
+                [42.2626, -71.8023],
+                {}
+            ).addTo(map_e5d0a09c8166ec892ac5680857d1640f);
+        
+    
+            var beautify_icon_c692954d6d0e7078976d6237ac632397 = new L.BeautifyIcon.icon(
+                {"backgroundColor": "#1e3a8a", "borderColor": "#1e3a8a", "borderWidth": 3, "iconShape": "marker", "innerIconStyle": "", "isAlphaNumericIcon": true, "spin": false, "text": 3, "textColor": "white"}
+            )
+            marker_037f785aad976f24aa90c75e44164e2c.setIcon(beautify_icon_c692954d6d0e7078976d6237ac632397);
+        
+    
+        var popup_19f7dcb0c6607fd5ed2fac521175ab91 = L.popup({"maxWidth": 380});
+
+        
+            var html_da89f66412850bebe1847a9b8c194611 = $(`<div id="html_da89f66412850bebe1847a9b8c194611" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Georgia, serif; font-size: 14px; line-height:1.35">       <div style="font-weight:700; font-size:16px; margin-bottom:4px;">Worcester, MA</div>       <div style="color:#333; margin-bottom:6px;"><i>Apr 20–23, 1775</i></div>       <div style="margin-bottom:6px;">Regrouping with provincial leaders before heading toward the Connecticut corridor. <a href="https://allthingsliberty.com/2016/02/traveling-to-the-second-continental-congress/" target="_blank">JAR travel narrative</a>.</div>       <div style="font-size:12px; color:#666;">Seq: 3</div>     </div>     </div>`)[0];
+            popup_19f7dcb0c6607fd5ed2fac521175ab91.setContent(html_da89f66412850bebe1847a9b8c194611);
+        
+
+        marker_037f785aad976f24aa90c75e44164e2c.bindPopup(popup_19f7dcb0c6607fd5ed2fac521175ab91)
+        ;
+
+        
+    
+    
+            marker_037f785aad976f24aa90c75e44164e2c.bindTooltip(
+                `<div>
+                     Worcester, MA
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_230815e835f652ec0654c4fcfbb11c9e = L.marker(
+                [42.2437, -71.9929],
+                {}
+            ).addTo(map_e5d0a09c8166ec892ac5680857d1640f);
+        
+    
+            var beautify_icon_7e1a9dddf8024c1c1352673c0596a944 = new L.BeautifyIcon.icon(
+                {"backgroundColor": "#1e3a8a", "borderColor": "#1e3a8a", "borderWidth": 3, "iconShape": "marker", "innerIconStyle": "", "isAlphaNumericIcon": true, "spin": false, "text": 4, "textColor": "white"}
+            )
+            marker_230815e835f652ec0654c4fcfbb11c9e.setIcon(beautify_icon_7e1a9dddf8024c1c1352673c0596a944);
+        
+    
+        var popup_18ac1d374be1c2218d1392d43fd01fa5 = L.popup({"maxWidth": 380});
+
+        
+            var html_6ee2ed625c19519b097975f5aa5ec8b3 = $(`<div id="html_6ee2ed625c19519b097975f5aa5ec8b3" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Georgia, serif; font-size: 14px; line-height:1.35">       <div style="font-weight:700; font-size:16px; margin-bottom:4px;">Spencer, MA (tavern stop)</div>       <div style="color:#333; margin-bottom:6px;"><i>Apr 24, 1775</i></div>       <div style="margin-bottom:6px;">Typical post-road halt west of Worcester. <a href="https://allthingsliberty.com/2016/02/traveling-to-the-second-continental-congress/" target="_blank">JAR</a>.</div>       <div style="font-size:12px; color:#666;">Seq: 4</div>     </div>     </div>`)[0];
+            popup_18ac1d374be1c2218d1392d43fd01fa5.setContent(html_6ee2ed625c19519b097975f5aa5ec8b3);
+        
+
+        marker_230815e835f652ec0654c4fcfbb11c9e.bindPopup(popup_18ac1d374be1c2218d1392d43fd01fa5)
+        ;
+
+        
+    
+    
+            marker_230815e835f652ec0654c4fcfbb11c9e.bindTooltip(
+                `<div>
+                     Spencer, MA (tavern stop)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f407212a743287e6ec4344e318343d12 = L.marker(
+                [42.2109, -72.0962],
+                {}
+            ).addTo(map_e5d0a09c8166ec892ac5680857d1640f);
+        
+    
+            var beautify_icon_a01329827cb58c21311f033100313a78 = new L.BeautifyIcon.icon(
+                {"backgroundColor": "#1e3a8a", "borderColor": "#1e3a8a", "borderWidth": 3, "iconShape": "marker", "innerIconStyle": "", "isAlphaNumericIcon": true, "spin": false, "text": 5, "textColor": "white"}
+            )
+            marker_f407212a743287e6ec4344e318343d12.setIcon(beautify_icon_a01329827cb58c21311f033100313a78);
+        
+    
+        var popup_7b761ed75da4399e1ac82b8a74241ca1 = L.popup({"maxWidth": 380});
+
+        
+            var html_fff3421a9941a9a6ab5ead63afc4149c = $(`<div id="html_fff3421a9941a9a6ab5ead63afc4149c" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Georgia, serif; font-size: 14px; line-height:1.35">       <div style="font-weight:700; font-size:16px; margin-bottom:4px;">Brookfield, MA (inn)</div>       <div style="color:#333; margin-bottom:6px;"><i>Apr 25, 1775</i></div>       <div style="margin-bottom:6px;">Stage town on the Boston–Albany road. <a href="https://allthingsliberty.com/2016/02/traveling-to-the-second-continental-congress/" target="_blank">JAR</a>.</div>       <div style="font-size:12px; color:#666;">Seq: 5</div>     </div>     </div>`)[0];
+            popup_7b761ed75da4399e1ac82b8a74241ca1.setContent(html_fff3421a9941a9a6ab5ead63afc4149c);
+        
+
+        marker_f407212a743287e6ec4344e318343d12.bindPopup(popup_7b761ed75da4399e1ac82b8a74241ca1)
+        ;
+
+        
+    
+    
+            marker_f407212a743287e6ec4344e318343d12.bindTooltip(
+                `<div>
+                     Brookfield, MA (inn)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b1969f0a1048cea0ddee6f0e7e23fc0d = L.marker(
+                [42.1015, -72.5898],
+                {}
+            ).addTo(map_e5d0a09c8166ec892ac5680857d1640f);
+        
+    
+            var beautify_icon_b44dec1c4ac295ce134a6daefc0713ba = new L.BeautifyIcon.icon(
+                {"backgroundColor": "#1e3a8a", "borderColor": "#1e3a8a", "borderWidth": 3, "iconShape": "marker", "innerIconStyle": "", "isAlphaNumericIcon": true, "spin": false, "text": 6, "textColor": "white"}
+            )
+            marker_b1969f0a1048cea0ddee6f0e7e23fc0d.setIcon(beautify_icon_b44dec1c4ac295ce134a6daefc0713ba);
+        
+    
+        var popup_1b11391456f409eaf56defad694d044e = L.popup({"maxWidth": 380});
+
+        
+            var html_7d3e3e8667f18f23ae71340c3ee0c05b = $(`<div id="html_7d3e3e8667f18f23ae71340c3ee0c05b" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Georgia, serif; font-size: 14px; line-height:1.35">       <div style="font-weight:700; font-size:16px; margin-bottom:4px;">Springfield, MA</div>       <div style="color:#333; margin-bottom:6px;"><i>Apr 26, 1775</i></div>       <div style="margin-bottom:6px;">Crossing the Connecticut River corridor; supply and militia discussions. <a href="https://allthingsliberty.com/2016/02/traveling-to-the-second-continental-congress/" target="_blank">JAR</a>.</div>       <div style="font-size:12px; color:#666;">Seq: 6</div>     </div>     </div>`)[0];
+            popup_1b11391456f409eaf56defad694d044e.setContent(html_7d3e3e8667f18f23ae71340c3ee0c05b);
+        
+
+        marker_b1969f0a1048cea0ddee6f0e7e23fc0d.bindPopup(popup_1b11391456f409eaf56defad694d044e)
+        ;
+
+        
+    
+    
+            marker_b1969f0a1048cea0ddee6f0e7e23fc0d.bindTooltip(
+                `<div>
+                     Springfield, MA
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_085ddcf0ae631a302780958ea7839b84 = L.marker(
+                [42.1251, -72.7495],
+                {}
+            ).addTo(map_e5d0a09c8166ec892ac5680857d1640f);
+        
+    
+            var beautify_icon_43851167adaf709b1132906926b59f4b = new L.BeautifyIcon.icon(
+                {"backgroundColor": "#1e3a8a", "borderColor": "#1e3a8a", "borderWidth": 3, "iconShape": "marker", "innerIconStyle": "", "isAlphaNumericIcon": true, "spin": false, "text": 7, "textColor": "white"}
+            )
+            marker_085ddcf0ae631a302780958ea7839b84.setIcon(beautify_icon_43851167adaf709b1132906926b59f4b);
+        
+    
+        var popup_3b780efaa99d55a628d602e6fcb07689 = L.popup({"maxWidth": 380});
+
+        
+            var html_bba1de79da5747207793137575e8a198 = $(`<div id="html_bba1de79da5747207793137575e8a198" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Georgia, serif; font-size: 14px; line-height:1.35">       <div style="font-weight:700; font-size:16px; margin-bottom:4px;">Westfield, MA (inn)</div>       <div style="color:#333; margin-bottom:6px;"><i>Apr 27, 1775</i></div>       <div style="margin-bottom:6px;">Overnight on the Boston–Albany road. <a href="https://allthingsliberty.com/2016/02/traveling-to-the-second-continental-congress/" target="_blank">JAR</a>.</div>       <div style="font-size:12px; color:#666;">Seq: 7</div>     </div>     </div>`)[0];
+            popup_3b780efaa99d55a628d602e6fcb07689.setContent(html_bba1de79da5747207793137575e8a198);
+        
+
+        marker_085ddcf0ae631a302780958ea7839b84.bindPopup(popup_3b780efaa99d55a628d602e6fcb07689)
+        ;
+
+        
+    
+    
+            marker_085ddcf0ae631a302780958ea7839b84.bindTooltip(
+                `<div>
+                     Westfield, MA (inn)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e66abfa4238d878593aebce0df73dc8a = L.marker(
+                [41.9829, -72.6506],
+                {}
+            ).addTo(map_e5d0a09c8166ec892ac5680857d1640f);
+        
+    
+            var beautify_icon_3689215ab74b22603c8072ab6adceec6 = new L.BeautifyIcon.icon(
+                {"backgroundColor": "#1e3a8a", "borderColor": "#1e3a8a", "borderWidth": 3, "iconShape": "marker", "innerIconStyle": "", "isAlphaNumericIcon": true, "spin": false, "text": 8, "textColor": "white"}
+            )
+            marker_e66abfa4238d878593aebce0df73dc8a.setIcon(beautify_icon_3689215ab74b22603c8072ab6adceec6);
+        
+    
+        var popup_7e2d638676bae9cabcf10f98f7ae793f = L.popup({"maxWidth": 380});
+
+        
+            var html_20fbc87c6e03b93979a3e933502bec29 = $(`<div id="html_20fbc87c6e03b93979a3e933502bec29" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Georgia, serif; font-size: 14px; line-height:1.35">       <div style="font-weight:700; font-size:16px; margin-bottom:4px;">Suffield, CT</div>       <div style="color:#333; margin-bottom:6px;"><i>Apr 28, 1775</i></div>       <div style="margin-bottom:6px;">Entering Connecticut; welcomed by local Committees of Correspondence. <a href="https://allthingsliberty.com/2016/02/traveling-to-the-second-continental-congress/" target="_blank">JAR</a>.</div>       <div style="font-size:12px; color:#666;">Seq: 8</div>     </div>     </div>`)[0];
+            popup_7e2d638676bae9cabcf10f98f7ae793f.setContent(html_20fbc87c6e03b93979a3e933502bec29);
+        
+
+        marker_e66abfa4238d878593aebce0df73dc8a.bindPopup(popup_7e2d638676bae9cabcf10f98f7ae793f)
+        ;
+
+        
+    
+    
+            marker_e66abfa4238d878593aebce0df73dc8a.bindTooltip(
+                `<div>
+                     Suffield, CT
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_5b9807aad1b8c0600d65726d8b82c234 = L.marker(
+                [41.7658, -72.6734],
+                {}
+            ).addTo(map_e5d0a09c8166ec892ac5680857d1640f);
+        
+    
+            var beautify_icon_222fbcbbd6fec1931b80ff981a0ce151 = new L.BeautifyIcon.icon(
+                {"backgroundColor": "#1e3a8a", "borderColor": "#1e3a8a", "borderWidth": 3, "iconShape": "marker", "innerIconStyle": "", "isAlphaNumericIcon": true, "spin": false, "text": 9, "textColor": "white"}
+            )
+            marker_5b9807aad1b8c0600d65726d8b82c234.setIcon(beautify_icon_222fbcbbd6fec1931b80ff981a0ce151);
+        
+    
+        var popup_f9505902d238f1ceeb9c0381c581c619 = L.popup({"maxWidth": 380});
+
+        
+            var html_01dba657db6813147ef36da2dcd33583 = $(`<div id="html_01dba657db6813147ef36da2dcd33583" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Georgia, serif; font-size: 14px; line-height:1.35">       <div style="font-weight:700; font-size:16px; margin-bottom:4px;">Hartford, CT — meeting with Gov. Jonathan Trumbull</div>       <div style="color:#333; margin-bottom:6px;"><i>Apr 29, 1775</i></div>       <div style="margin-bottom:6px;">Delegation meets with Connecticut’s leadership; funds and support discussed. <a href="https://founders.archives.gov/documents/Adams/01-02-02-0005-0001" target="_blank">Founders Online</a>.</div>       <div style="font-size:12px; color:#666;">Seq: 9</div>     </div>     </div>`)[0];
+            popup_f9505902d238f1ceeb9c0381c581c619.setContent(html_01dba657db6813147ef36da2dcd33583);
+        
+
+        marker_5b9807aad1b8c0600d65726d8b82c234.bindPopup(popup_f9505902d238f1ceeb9c0381c581c619)
+        ;
+
+        
+    
+    
+            marker_5b9807aad1b8c0600d65726d8b82c234.bindTooltip(
+                `<div>
+                     Hartford, CT — meeting with Gov. Jonathan Trumbull
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_1731b088539a93b38d8f06402ef86bc8 = L.marker(
+                [42.2223, -71.0012],
+                {}
+            ).addTo(map_e5d0a09c8166ec892ac5680857d1640f);
+        
+    
+            var beautify_icon_a3d85ec7fd26fcf49d3a5eddba900d04 = new L.BeautifyIcon.icon(
+                {"backgroundColor": "#991b1b", "borderColor": "#991b1b", "borderWidth": 3, "iconShape": "marker", "innerIconStyle": "", "isAlphaNumericIcon": true, "spin": false, "text": 1, "textColor": "white"}
+            )
+            marker_1731b088539a93b38d8f06402ef86bc8.setIcon(beautify_icon_a3d85ec7fd26fcf49d3a5eddba900d04);
+        
+    
+        var popup_0cbb23367c2f53b2687e27947e65b001 = L.popup({"maxWidth": 380});
+
+        
+            var html_684346d3c564eb6359b51e6f69123f76 = $(`<div id="html_684346d3c564eb6359b51e6f69123f76" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Georgia, serif; font-size: 14px; line-height:1.35">       <div style="font-weight:700; font-size:16px; margin-bottom:4px;">Braintree (Quincy), MA — Departure</div>       <div style="color:#333; margin-bottom:6px;"><i>Apr 26, 1775</i></div>       <div style="margin-bottom:6px;">John Adams sets out with a servant for Philadelphia. <a href="https://founders.archives.gov/documents/Adams/01-02-02-0005-0001" target="_blank">Founders Online</a>.</div>       <div style="font-size:12px; color:#666;">Seq: 1</div>     </div>     </div>`)[0];
+            popup_0cbb23367c2f53b2687e27947e65b001.setContent(html_684346d3c564eb6359b51e6f69123f76);
+        
+
+        marker_1731b088539a93b38d8f06402ef86bc8.bindPopup(popup_0cbb23367c2f53b2687e27947e65b001)
+        ;
+
+        
+    
+    
+            marker_1731b088539a93b38d8f06402ef86bc8.bindTooltip(
+                `<div>
+                     Braintree (Quincy), MA — Departure
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_859bd63e5f72cbae93c5af53bef5ea0b = L.marker(
+                [42.247, -71.1787],
+                {}
+            ).addTo(map_e5d0a09c8166ec892ac5680857d1640f);
+        
+    
+            var beautify_icon_bf5c2e17032cd4af81f050320422b33a = new L.BeautifyIcon.icon(
+                {"backgroundColor": "#991b1b", "borderColor": "#991b1b", "borderWidth": 3, "iconShape": "marker", "innerIconStyle": "", "isAlphaNumericIcon": true, "spin": false, "text": 2, "textColor": "white"}
+            )
+            marker_859bd63e5f72cbae93c5af53bef5ea0b.setIcon(beautify_icon_bf5c2e17032cd4af81f050320422b33a);
+        
+    
+        var popup_6293872953d8a88a094a3d81c49ac922 = L.popup({"maxWidth": 380});
+
+        
+            var html_b7e0f2a79cad9c2617130c54df22da3c = $(`<div id="html_b7e0f2a79cad9c2617130c54df22da3c" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Georgia, serif; font-size: 14px; line-height:1.35">       <div style="font-weight:700; font-size:16px; margin-bottom:4px;">Dedham, MA — Ames Tavern vicinity</div>       <div style="color:#333; margin-bottom:6px;"><i>Apr 26, 1775</i></div>       <div style="margin-bottom:6px;">First post-road stage from Braintree. <a href="https://allthingsliberty.com/2016/02/traveling-to-the-second-continental-congress/" target="_blank">JAR</a>.</div>       <div style="font-size:12px; color:#666;">Seq: 2</div>     </div>     </div>`)[0];
+            popup_6293872953d8a88a094a3d81c49ac922.setContent(html_b7e0f2a79cad9c2617130c54df22da3c);
+        
+
+        marker_859bd63e5f72cbae93c5af53bef5ea0b.bindPopup(popup_6293872953d8a88a094a3d81c49ac922)
+        ;
+
+        
+    
+    
+            marker_859bd63e5f72cbae93c5af53bef5ea0b.bindTooltip(
+                `<div>
+                     Dedham, MA — Ames Tavern vicinity
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e114df481d1c954ef82d2e9f49239a7e = L.marker(
+                [42.0668, -71.3287],
+                {}
+            ).addTo(map_e5d0a09c8166ec892ac5680857d1640f);
+        
+    
+            var beautify_icon_73007ba78211970819da28a6fd33fd0e = new L.BeautifyIcon.icon(
+                {"backgroundColor": "#991b1b", "borderColor": "#991b1b", "borderWidth": 3, "iconShape": "marker", "innerIconStyle": "", "isAlphaNumericIcon": true, "spin": false, "text": 3, "textColor": "white"}
+            )
+            marker_e114df481d1c954ef82d2e9f49239a7e.setIcon(beautify_icon_73007ba78211970819da28a6fd33fd0e);
+        
+    
+        var popup_29d97f6fc173fc2d44b98b4b7f3dff71 = L.popup({"maxWidth": 380});
+
+        
+            var html_c0912e2a6945b17b65e13195c2f5632e = $(`<div id="html_c0912e2a6945b17b65e13195c2f5632e" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Georgia, serif; font-size: 14px; line-height:1.35">       <div style="font-weight:700; font-size:16px; margin-bottom:4px;">Wrentham, MA (tavern)</div>       <div style="color:#333; margin-bottom:6px;"><i>Apr 26–27, 1775</i></div>       <div style="margin-bottom:6px;">Overnight on the road to Providence. <a href="https://allthingsliberty.com/2016/02/traveling-to-the-second-continental-congress/" target="_blank">JAR</a>.</div>       <div style="font-size:12px; color:#666;">Seq: 3</div>     </div>     </div>`)[0];
+            popup_29d97f6fc173fc2d44b98b4b7f3dff71.setContent(html_c0912e2a6945b17b65e13195c2f5632e);
+        
+
+        marker_e114df481d1c954ef82d2e9f49239a7e.bindPopup(popup_29d97f6fc173fc2d44b98b4b7f3dff71)
+        ;
+
+        
+    
+    
+            marker_e114df481d1c954ef82d2e9f49239a7e.bindTooltip(
+                `<div>
+                     Wrentham, MA (tavern)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_11405fcae65835207ad044aac2f9a97b = L.marker(
+                [41.824, -71.4128],
+                {}
+            ).addTo(map_e5d0a09c8166ec892ac5680857d1640f);
+        
+    
+            var beautify_icon_ebd8a2af48636f08e8b983c0d46741bb = new L.BeautifyIcon.icon(
+                {"backgroundColor": "#991b1b", "borderColor": "#991b1b", "borderWidth": 3, "iconShape": "marker", "innerIconStyle": "", "isAlphaNumericIcon": true, "spin": false, "text": 4, "textColor": "white"}
+            )
+            marker_11405fcae65835207ad044aac2f9a97b.setIcon(beautify_icon_ebd8a2af48636f08e8b983c0d46741bb);
+        
+    
+        var popup_6a020f9f2d6d2d3c70257110db28dd5d = L.popup({"maxWidth": 380});
+
+        
+            var html_16f1aaf5af7cbf0b00a7b914f6c4a9fd = $(`<div id="html_16f1aaf5af7cbf0b00a7b914f6c4a9fd" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Georgia, serif; font-size: 14px; line-height:1.35">       <div style="font-weight:700; font-size:16px; margin-bottom:4px;">Providence, RI</div>       <div style="color:#333; margin-bottom:6px;"><i>Apr 27, 1775</i></div>       <div style="margin-bottom:6px;">Calls on Rhode Island patriots; gathers intelligence. <a href="https://allthingsliberty.com/2016/02/traveling-to-the-second-continental-congress/" target="_blank">JAR</a>.</div>       <div style="font-size:12px; color:#666;">Seq: 4</div>     </div>     </div>`)[0];
+            popup_6a020f9f2d6d2d3c70257110db28dd5d.setContent(html_16f1aaf5af7cbf0b00a7b914f6c4a9fd);
+        
+
+        marker_11405fcae65835207ad044aac2f9a97b.bindPopup(popup_6a020f9f2d6d2d3c70257110db28dd5d)
+        ;
+
+        
+    
+    
+            marker_11405fcae65835207ad044aac2f9a97b.bindTooltip(
+                `<div>
+                     Providence, RI
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_123adcfbe1e95d01fc9b08e48c939c21 = L.marker(
+                [41.7004, -71.5376],
+                {}
+            ).addTo(map_e5d0a09c8166ec892ac5680857d1640f);
+        
+    
+            var beautify_icon_4b2707ab3749253881f658b3b57d4272 = new L.BeautifyIcon.icon(
+                {"backgroundColor": "#991b1b", "borderColor": "#991b1b", "borderWidth": 3, "iconShape": "marker", "innerIconStyle": "", "isAlphaNumericIcon": true, "spin": false, "text": 5, "textColor": "white"}
+            )
+            marker_123adcfbe1e95d01fc9b08e48c939c21.setIcon(beautify_icon_4b2707ab3749253881f658b3b57d4272);
+        
+    
+        var popup_c666ed0674b09ba9869dfd91b4053815 = L.popup({"maxWidth": 380});
+
+        
+            var html_844e7fd1f1d47919e2c3efba482a1d2f = $(`<div id="html_844e7fd1f1d47919e2c3efba482a1d2f" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Georgia, serif; font-size: 14px; line-height:1.35">       <div style="font-weight:700; font-size:16px; margin-bottom:4px;">Coventry/West Greenwich, RI (inn)</div>       <div style="color:#333; margin-bottom:6px;"><i>Apr 28, 1775</i></div>       <div style="margin-bottom:6px;">Country-road lodging toward Connecticut line. <a href="https://allthingsliberty.com/2016/02/traveling-to-the-second-continental-congress/" target="_blank">JAR</a>.</div>       <div style="font-size:12px; color:#666;">Seq: 5</div>     </div>     </div>`)[0];
+            popup_c666ed0674b09ba9869dfd91b4053815.setContent(html_844e7fd1f1d47919e2c3efba482a1d2f);
+        
+
+        marker_123adcfbe1e95d01fc9b08e48c939c21.bindPopup(popup_c666ed0674b09ba9869dfd91b4053815)
+        ;
+
+        
+    
+    
+            marker_123adcfbe1e95d01fc9b08e48c939c21.bindTooltip(
+                `<div>
+                     Coventry/West Greenwich, RI (inn)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_5a92d0df99ba693cb125ad8f3a4c1615 = L.marker(
+                [41.701, -72.157],
+                {}
+            ).addTo(map_e5d0a09c8166ec892ac5680857d1640f);
+        
+    
+            var beautify_icon_1940eb730faf209d5ace632c5408a442 = new L.BeautifyIcon.icon(
+                {"backgroundColor": "#991b1b", "borderColor": "#991b1b", "borderWidth": 3, "iconShape": "marker", "innerIconStyle": "", "isAlphaNumericIcon": true, "spin": false, "text": 6, "textColor": "white"}
+            )
+            marker_5a92d0df99ba693cb125ad8f3a4c1615.setIcon(beautify_icon_1940eb730faf209d5ace632c5408a442);
+        
+    
+        var popup_adf0b9eddcfd6a1ca00f5b5c3d7bdbad = L.popup({"maxWidth": 380});
+
+        
+            var html_cdf7fe8528aaf687d57a7c990d4535d4 = $(`<div id="html_cdf7fe8528aaf687d57a7c990d4535d4" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Georgia, serif; font-size: 14px; line-height:1.35">       <div style="font-weight:700; font-size:16px; margin-bottom:4px;">Windham, CT — Cary/Cary’s (tavern)</div>       <div style="color:#333; margin-bottom:6px;"><i>Apr 28, 1775</i></div>       <div style="margin-bottom:6px;">Stage on the route to Hartford; name attested in JA’s 1775 accounts. <a href="https://www.masshist.org/digitaladams/archive/doc?id=D22B" target="_blank">MHS: Diary 22B</a>.</div>       <div style="font-size:12px; color:#666;">Seq: 6</div>     </div>     </div>`)[0];
+            popup_adf0b9eddcfd6a1ca00f5b5c3d7bdbad.setContent(html_cdf7fe8528aaf687d57a7c990d4535d4);
+        
+
+        marker_5a92d0df99ba693cb125ad8f3a4c1615.bindPopup(popup_adf0b9eddcfd6a1ca00f5b5c3d7bdbad)
+        ;
+
+        
+    
+    
+            marker_5a92d0df99ba693cb125ad8f3a4c1615.bindTooltip(
+                `<div>
+                     Windham, CT — Cary/Cary’s (tavern)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_0bce5267a377b82f8ba2c091934a8020 = L.marker(
+                [41.7658, -72.6734],
+                {}
+            ).addTo(map_e5d0a09c8166ec892ac5680857d1640f);
+        
+    
+            var beautify_icon_267084b296655ef35d5dcbdcb966bf18 = new L.BeautifyIcon.icon(
+                {"backgroundColor": "#991b1b", "borderColor": "#991b1b", "borderWidth": 3, "iconShape": "marker", "innerIconStyle": "", "isAlphaNumericIcon": true, "spin": false, "text": 7, "textColor": "white"}
+            )
+            marker_0bce5267a377b82f8ba2c091934a8020.setIcon(beautify_icon_267084b296655ef35d5dcbdcb966bf18);
+        
+    
+        var popup_7360cb9d6ed23b2f1d7243f479acc359 = L.popup({"maxWidth": 380});
+
+        
+            var html_1ce0c904d63e60c03df90961c1f7c3e8 = $(`<div id="html_1ce0c904d63e60c03df90961c1f7c3e8" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Georgia, serif; font-size: 14px; line-height:1.35">       <div style="font-weight:700; font-size:16px; margin-bottom:4px;">Hartford, CT — Rendezvous</div>       <div style="color:#333; margin-bottom:6px;"><i>Apr 29, 1775</i></div>       <div style="margin-bottom:6px;">Joins Samuel Adams & John Hancock; consultations with Gov. Trumbull. <a href="https://founders.archives.gov/documents/Adams/01-02-02-0005-0001" target="_blank">Founders Online</a>.</div>       <div style="font-size:12px; color:#666;">Seq: 7</div>     </div>     </div>`)[0];
+            popup_7360cb9d6ed23b2f1d7243f479acc359.setContent(html_1ce0c904d63e60c03df90961c1f7c3e8);
+        
+
+        marker_0bce5267a377b82f8ba2c091934a8020.bindPopup(popup_7360cb9d6ed23b2f1d7243f479acc359)
+        ;
+
+        
+    
+    
+            marker_0bce5267a377b82f8ba2c091934a8020.bindTooltip(
+                `<div>
+                     Hartford, CT — Rendezvous
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_4ba472fae0eb45535e48e38c9ba952d7 = L.marker(
+                [41.7143, -72.6526],
+                {}
+            ).addTo(map_e5d0a09c8166ec892ac5680857d1640f);
+        
+    
+            var beautify_icon_a14508644c66e93f565361e898f8903f = new L.BeautifyIcon.icon(
+                {"backgroundColor": "#0b5", "borderColor": "#0b5", "borderWidth": 3, "iconShape": "marker", "innerIconStyle": "", "isAlphaNumericIcon": true, "spin": false, "text": 1, "textColor": "white"}
+            )
+            marker_4ba472fae0eb45535e48e38c9ba952d7.setIcon(beautify_icon_a14508644c66e93f565361e898f8903f);
+        
+    
+        var popup_4954cea6a8a7133e7db88946624af5bd = L.popup({"maxWidth": 380});
+
+        
+            var html_bd181eaf5838549e0ce1efba8fede118 = $(`<div id="html_bd181eaf5838549e0ce1efba8fede118" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Georgia, serif; font-size: 14px; line-height:1.35">       <div style="font-weight:700; font-size:16px; margin-bottom:4px;">Wethersfield, CT</div>       <div style="color:#333; margin-bottom:6px;"><i>Apr 30, 1775</i></div>       <div style="margin-bottom:6px;">Short stage from Hartford along the river road. <a href="https://www.masshist.org/digitaladams/archive/doc?id=D22B" target="_blank">MHS: Diary 22B</a>.</div>       <div style="font-size:12px; color:#666;">Seq: 1</div>     </div>     </div>`)[0];
+            popup_4954cea6a8a7133e7db88946624af5bd.setContent(html_bd181eaf5838549e0ce1efba8fede118);
+        
+
+        marker_4ba472fae0eb45535e48e38c9ba952d7.bindPopup(popup_4954cea6a8a7133e7db88946624af5bd)
+        ;
+
+        
+    
+    
+            marker_4ba472fae0eb45535e48e38c9ba952d7.bindTooltip(
+                `<div>
+                     Wethersfield, CT
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_84fd7d2ed168e5686bd59c63ca9eab17 = L.marker(
+                [41.5623, -72.6506],
+                {}
+            ).addTo(map_e5d0a09c8166ec892ac5680857d1640f);
+        
+    
+            var beautify_icon_00a09d3de0127a44fd0f6efa2026486b = new L.BeautifyIcon.icon(
+                {"backgroundColor": "#0b5", "borderColor": "#0b5", "borderWidth": 3, "iconShape": "marker", "innerIconStyle": "", "isAlphaNumericIcon": true, "spin": false, "text": 2, "textColor": "white"}
+            )
+            marker_84fd7d2ed168e5686bd59c63ca9eab17.setIcon(beautify_icon_00a09d3de0127a44fd0f6efa2026486b);
+        
+    
+        var popup_7c969d3d67bfea20acd48df82527f211 = L.popup({"maxWidth": 380});
+
+        
+            var html_68f24a655bd42725df33176f4a0441a7 = $(`<div id="html_68f24a655bd42725df33176f4a0441a7" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Georgia, serif; font-size: 14px; line-height:1.35">       <div style="font-weight:700; font-size:16px; margin-bottom:4px;">Middletown, CT</div>       <div style="color:#333; margin-bottom:6px;"><i>May 1, 1775</i></div>       <div style="margin-bottom:6px;">River town stop; routine lodging. <a href="https://www.masshist.org/digitaladams/archive/doc?id=D22B" target="_blank">MHS: Diary 22B</a>.</div>       <div style="font-size:12px; color:#666;">Seq: 2</div>     </div>     </div>`)[0];
+            popup_7c969d3d67bfea20acd48df82527f211.setContent(html_68f24a655bd42725df33176f4a0441a7);
+        
+
+        marker_84fd7d2ed168e5686bd59c63ca9eab17.bindPopup(popup_7c969d3d67bfea20acd48df82527f211)
+        ;
+
+        
+    
+    
+            marker_84fd7d2ed168e5686bd59c63ca9eab17.bindTooltip(
+                `<div>
+                     Middletown, CT
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_be9188e99151585b0f5eb1595a53c074 = L.marker(
+                [41.4504, -72.4601],
+                {}
+            ).addTo(map_e5d0a09c8166ec892ac5680857d1640f);
+        
+    
+            var beautify_icon_843b1646e04d448d6b6da79984f467bd = new L.BeautifyIcon.icon(
+                {"backgroundColor": "#0b5", "borderColor": "#0b5", "borderWidth": 3, "iconShape": "marker", "innerIconStyle": "", "isAlphaNumericIcon": true, "spin": false, "text": 3, "textColor": "white"}
+            )
+            marker_be9188e99151585b0f5eb1595a53c074.setIcon(beautify_icon_843b1646e04d448d6b6da79984f467bd);
+        
+    
+        var popup_1c1825d77bdbfe0d384a919a4495a918 = L.popup({"maxWidth": 380});
+
+        
+            var html_f071b22a4853c59f7e8bc2013b87e512 = $(`<div id="html_f071b22a4853c59f7e8bc2013b87e512" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Georgia, serif; font-size: 14px; line-height:1.35">       <div style="font-weight:700; font-size:16px; margin-bottom:4px;">Haddam, CT — Smith’s</div>       <div style="color:#333; margin-bottom:6px;"><i>May 1–2, 1775</i></div>       <div style="margin-bottom:6px;">Documented expense entry at “Smiths of Haddam.” <a href="https://www.masshist.org/digitaladams/archive/doc?id=D22B" target="_blank">MHS: Diary 22B</a>.</div>       <div style="font-size:12px; color:#666;">Seq: 3</div>     </div>     </div>`)[0];
+            popup_1c1825d77bdbfe0d384a919a4495a918.setContent(html_f071b22a4853c59f7e8bc2013b87e512);
+        
+
+        marker_be9188e99151585b0f5eb1595a53c074.bindPopup(popup_1c1825d77bdbfe0d384a919a4495a918)
+        ;
+
+        
+    
+    
+            marker_be9188e99151585b0f5eb1595a53c074.bindTooltip(
+                `<div>
+                     Haddam, CT — Smith’s
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_9a81ca351d998a4d6da3e2b521ec944d = L.marker(
+                [41.4812, -72.6815],
+                {}
+            ).addTo(map_e5d0a09c8166ec892ac5680857d1640f);
+        
+    
+            var beautify_icon_82ab5b4e015cc765a623e086b5da339e = new L.BeautifyIcon.icon(
+                {"backgroundColor": "#0b5", "borderColor": "#0b5", "borderWidth": 3, "iconShape": "marker", "innerIconStyle": "", "isAlphaNumericIcon": true, "spin": false, "text": 4, "textColor": "white"}
+            )
+            marker_9a81ca351d998a4d6da3e2b521ec944d.setIcon(beautify_icon_82ab5b4e015cc765a623e086b5da339e);
+        
+    
+        var popup_f892fb8c55ccafac10ff768461768f47 = L.popup({"maxWidth": 380});
+
+        
+            var html_98be7373ce02b163f773a64863300f99 = $(`<div id="html_98be7373ce02b163f773a64863300f99" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Georgia, serif; font-size: 14px; line-height:1.35">       <div style="font-weight:700; font-size:16px; margin-bottom:4px;">Durham, CT — Camp’s</div>       <div style="color:#333; margin-bottom:6px;"><i>May 2, 1775</i></div>       <div style="margin-bottom:6px;">Expense entry at “Camps in Durham.” <a href="https://www.masshist.org/digitaladams/archive/doc?id=D22B" target="_blank">MHS: Diary 22B</a>.</div>       <div style="font-size:12px; color:#666;">Seq: 4</div>     </div>     </div>`)[0];
+            popup_f892fb8c55ccafac10ff768461768f47.setContent(html_98be7373ce02b163f773a64863300f99);
+        
+
+        marker_9a81ca351d998a4d6da3e2b521ec944d.bindPopup(popup_f892fb8c55ccafac10ff768461768f47)
+        ;
+
+        
+    
+    
+            marker_9a81ca351d998a4d6da3e2b521ec944d.bindTooltip(
+                `<div>
+                     Durham, CT — Camp’s
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_914d86e3712a72b9054e3518d3544ada = L.marker(
+                [41.457, -72.8231],
+                {}
+            ).addTo(map_e5d0a09c8166ec892ac5680857d1640f);
+        
+    
+            var beautify_icon_b7bc884d3f72adeb8eef344b11e2bd27 = new L.BeautifyIcon.icon(
+                {"backgroundColor": "#0b5", "borderColor": "#0b5", "borderWidth": 3, "iconShape": "marker", "innerIconStyle": "", "isAlphaNumericIcon": true, "spin": false, "text": 5, "textColor": "white"}
+            )
+            marker_914d86e3712a72b9054e3518d3544ada.setIcon(beautify_icon_b7bc884d3f72adeb8eef344b11e2bd27);
+        
+    
+        var popup_9bc2f72752a53da535217c26ae0bfe17 = L.popup({"maxWidth": 380});
+
+        
+            var html_ec0a8c443de3b84ba6311db2f28716b1 = $(`<div id="html_ec0a8c443de3b84ba6311db2f28716b1" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Georgia, serif; font-size: 14px; line-height:1.35">       <div style="font-weight:700; font-size:16px; margin-bottom:4px;">Wallingford, CT — Robinson’s (and another tavern)</div>       <div style="color:#333; margin-bottom:6px;"><i>May 2, 1775</i></div>       <div style="margin-bottom:6px;">Entry notes “Robinsons Wallingford and at another Tav.” <a href="https://www.masshist.org/digitaladams/archive/doc?id=D22B" target="_blank">MHS: Diary 22B</a>.</div>       <div style="font-size:12px; color:#666;">Seq: 5</div>     </div>     </div>`)[0];
+            popup_9bc2f72752a53da535217c26ae0bfe17.setContent(html_ec0a8c443de3b84ba6311db2f28716b1);
+        
+
+        marker_914d86e3712a72b9054e3518d3544ada.bindPopup(popup_9bc2f72752a53da535217c26ae0bfe17)
+        ;
+
+        
+    
+    
+            marker_914d86e3712a72b9054e3518d3544ada.bindTooltip(
+                `<div>
+                     Wallingford, CT — Robinson’s (and another tavern)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_7b9e85ba4193b17070a41a2cdbf876f4 = L.marker(
+                [41.3083, -72.9279],
+                {}
+            ).addTo(map_e5d0a09c8166ec892ac5680857d1640f);
+        
+    
+            var beautify_icon_1d89ad099e4795f91a431fb2ee6357aa = new L.BeautifyIcon.icon(
+                {"backgroundColor": "#0b5", "borderColor": "#0b5", "borderWidth": 3, "iconShape": "marker", "innerIconStyle": "", "isAlphaNumericIcon": true, "spin": false, "text": 6, "textColor": "white"}
+            )
+            marker_7b9e85ba4193b17070a41a2cdbf876f4.setIcon(beautify_icon_1d89ad099e4795f91a431fb2ee6357aa);
+        
+    
+        var popup_05b5e2ab2dfa348d5f03150ae38d2b47 = L.popup({"maxWidth": 380});
+
+        
+            var html_49cb0d478b76bffe093ecdde38c9fbe0 = $(`<div id="html_49cb0d478b76bffe093ecdde38c9fbe0" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Georgia, serif; font-size: 14px; line-height:1.35">       <div style="font-weight:700; font-size:16px; margin-bottom:4px;">New Haven, CT — Beers’s</div>       <div style="color:#333; margin-bottom:6px;"><i>May 2, 1775</i></div>       <div style="margin-bottom:6px;">Documented at “Beers’s of New Haven.” <a href="https://www.masshist.org/digitaladams/archive/doc?id=D22B" target="_blank">MHS: Diary 22B</a>.</div>       <div style="font-size:12px; color:#666;">Seq: 6</div>     </div>     </div>`)[0];
+            popup_05b5e2ab2dfa348d5f03150ae38d2b47.setContent(html_49cb0d478b76bffe093ecdde38c9fbe0);
+        
+
+        marker_7b9e85ba4193b17070a41a2cdbf876f4.bindPopup(popup_05b5e2ab2dfa348d5f03150ae38d2b47)
+        ;
+
+        
+    
+    
+            marker_7b9e85ba4193b17070a41a2cdbf876f4.bindTooltip(
+                `<div>
+                     New Haven, CT — Beers’s
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d669b0b9abe8f26c82a2823ed407a477 = L.marker(
+                [41.2223, -73.0565],
+                {}
+            ).addTo(map_e5d0a09c8166ec892ac5680857d1640f);
+        
+    
+            var beautify_icon_c5a6f53c2813332afe93f9c80e92b661 = new L.BeautifyIcon.icon(
+                {"backgroundColor": "#0b5", "borderColor": "#0b5", "borderWidth": 3, "iconShape": "marker", "innerIconStyle": "", "isAlphaNumericIcon": true, "spin": false, "text": 7, "textColor": "white"}
+            )
+            marker_d669b0b9abe8f26c82a2823ed407a477.setIcon(beautify_icon_c5a6f53c2813332afe93f9c80e92b661);
+        
+    
+        var popup_d1980f7f7834cda066d4a7d89062ef44 = L.popup({"maxWidth": 380});
+
+        
+            var html_5eef65cc94c059c3f6be1efba12afd8a = $(`<div id="html_5eef65cc94c059c3f6be1efba12afd8a" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Georgia, serif; font-size: 14px; line-height:1.35">       <div style="font-weight:700; font-size:16px; margin-bottom:4px;">Milford, CT — Bryant’s</div>       <div style="color:#333; margin-bottom:6px;"><i>May 3, 1775</i></div>       <div style="margin-bottom:6px;">Expense entry at “Bryants of Milford.” <a href="https://www.masshist.org/digitaladams/archive/doc?id=D22B" target="_blank">MHS: Diary 22B</a>.</div>       <div style="font-size:12px; color:#666;">Seq: 7</div>     </div>     </div>`)[0];
+            popup_d1980f7f7834cda066d4a7d89062ef44.setContent(html_5eef65cc94c059c3f6be1efba12afd8a);
+        
+
+        marker_d669b0b9abe8f26c82a2823ed407a477.bindPopup(popup_d1980f7f7834cda066d4a7d89062ef44)
+        ;
+
+        
+    
+    
+            marker_d669b0b9abe8f26c82a2823ed407a477.bindTooltip(
+                `<div>
+                     Milford, CT — Bryant’s
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_1235c8c60185bebbb162055779254a01 = L.marker(
+                [41.1845, -73.1322],
+                {}
+            ).addTo(map_e5d0a09c8166ec892ac5680857d1640f);
+        
+    
+            var beautify_icon_5625dfb7ea9fc339c3fe6aa9fef1903d = new L.BeautifyIcon.icon(
+                {"backgroundColor": "#0b5", "borderColor": "#0b5", "borderWidth": 3, "iconShape": "marker", "innerIconStyle": "", "isAlphaNumericIcon": true, "spin": false, "text": 8, "textColor": "white"}
+            )
+            marker_1235c8c60185bebbb162055779254a01.setIcon(beautify_icon_5625dfb7ea9fc339c3fe6aa9fef1903d);
+        
+    
+        var popup_f68dd331c7295a58cad84868a21ab813 = L.popup({"maxWidth": 380});
+
+        
+            var html_2059521b5c5f87309f9493983165367f = $(`<div id="html_2059521b5c5f87309f9493983165367f" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Georgia, serif; font-size: 14px; line-height:1.35">       <div style="font-weight:700; font-size:16px; margin-bottom:4px;">Stratford Ferry, CT</div>       <div style="color:#333; margin-bottom:6px;"><i>May 3, 1775</i></div>       <div style="margin-bottom:6px;">Ferry crossing; explicit expense line. <a href="https://www.masshist.org/digitaladams/archive/doc?id=D22B" target="_blank">MHS: Diary 22B</a>.</div>       <div style="font-size:12px; color:#666;">Seq: 8</div>     </div>     </div>`)[0];
+            popup_f68dd331c7295a58cad84868a21ab813.setContent(html_2059521b5c5f87309f9493983165367f);
+        
+
+        marker_1235c8c60185bebbb162055779254a01.bindPopup(popup_f68dd331c7295a58cad84868a21ab813)
+        ;
+
+        
+    
+    
+            marker_1235c8c60185bebbb162055779254a01.bindTooltip(
+                `<div>
+                     Stratford Ferry, CT
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e1484f98bae5376d78b353f16833b801 = L.marker(
+                [41.1865, -73.1952],
+                {}
+            ).addTo(map_e5d0a09c8166ec892ac5680857d1640f);
+        
+    
+            var beautify_icon_0e0bf9fba1b654389fd795a5b8abb219 = new L.BeautifyIcon.icon(
+                {"backgroundColor": "#0b5", "borderColor": "#0b5", "borderWidth": 3, "iconShape": "marker", "innerIconStyle": "", "isAlphaNumericIcon": true, "spin": false, "text": 9, "textColor": "white"}
+            )
+            marker_e1484f98bae5376d78b353f16833b801.setIcon(beautify_icon_0e0bf9fba1b654389fd795a5b8abb219);
+        
+    
+        var popup_c14360566429ab1d7573632a018362f7 = L.popup({"maxWidth": 380});
+
+        
+            var html_b800e0c11996325097f67e9f69c43af7 = $(`<div id="html_b800e0c11996325097f67e9f69c43af7" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Georgia, serif; font-size: 14px; line-height:1.35">       <div style="font-weight:700; font-size:16px; margin-bottom:4px;">Stratfield (Bridgeport), CT — Oats stop</div>       <div style="color:#333; margin-bottom:6px;"><i>May 3, 1775</i></div>       <div style="margin-bottom:6px;">“Stratfield for Oats” entry (present-day Bridgeport). <a href="https://www.masshist.org/digitaladams/archive/doc?id=D22B" target="_blank">MHS: Diary 22B</a>.</div>       <div style="font-size:12px; color:#666;">Seq: 9</div>     </div>     </div>`)[0];
+            popup_c14360566429ab1d7573632a018362f7.setContent(html_b800e0c11996325097f67e9f69c43af7);
+        
+
+        marker_e1484f98bae5376d78b353f16833b801.bindPopup(popup_c14360566429ab1d7573632a018362f7)
+        ;
+
+        
+    
+    
+            marker_e1484f98bae5376d78b353f16833b801.bindTooltip(
+                `<div>
+                     Stratfield (Bridgeport), CT — Oats stop
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_6152ca4c142b8f2a9d1fa67508f20910 = L.marker(
+                [41.1408, -73.2637],
+                {}
+            ).addTo(map_e5d0a09c8166ec892ac5680857d1640f);
+        
+    
+            var beautify_icon_6e062a3ca2168b543498ecc45da909bb = new L.BeautifyIcon.icon(
+                {"backgroundColor": "#0b5", "borderColor": "#0b5", "borderWidth": 3, "iconShape": "marker", "innerIconStyle": "", "isAlphaNumericIcon": true, "spin": false, "text": 10, "textColor": "white"}
+            )
+            marker_6152ca4c142b8f2a9d1fa67508f20910.setIcon(beautify_icon_6e062a3ca2168b543498ecc45da909bb);
+        
+    
+        var popup_ba816755e088df02c2b36634eafb348e = L.popup({"maxWidth": 380});
+
+        
+            var html_5dd7ecd052ed4e3df17b9f184306d906 = $(`<div id="html_5dd7ecd052ed4e3df17b9f184306d906" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Georgia, serif; font-size: 14px; line-height:1.35">       <div style="font-weight:700; font-size:16px; margin-bottom:4px;">Fairfield, CT — Penfield’s</div>       <div style="color:#333; margin-bottom:6px;"><i>May 4, 1775</i></div>       <div style="margin-bottom:6px;">Documented at “Penfields of Fairfield.” <a href="https://www.masshist.org/digitaladams/archive/doc?id=D22B" target="_blank">MHS: Diary 22B</a>.</div>       <div style="font-size:12px; color:#666;">Seq: 10</div>     </div>     </div>`)[0];
+            popup_ba816755e088df02c2b36634eafb348e.setContent(html_5dd7ecd052ed4e3df17b9f184306d906);
+        
+
+        marker_6152ca4c142b8f2a9d1fa67508f20910.bindPopup(popup_ba816755e088df02c2b36634eafb348e)
+        ;
+
+        
+    
+    
+            marker_6152ca4c142b8f2a9d1fa67508f20910.bindTooltip(
+                `<div>
+                     Fairfield, CT — Penfield’s
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_6319c727e793aa3ddb613b6cbf1b5ed1 = L.marker(
+                [41.1176, -73.4089],
+                {}
+            ).addTo(map_e5d0a09c8166ec892ac5680857d1640f);
+        
+    
+            var beautify_icon_11f6793e736998f048ed65f376035f06 = new L.BeautifyIcon.icon(
+                {"backgroundColor": "#0b5", "borderColor": "#0b5", "borderWidth": 3, "iconShape": "marker", "innerIconStyle": "", "isAlphaNumericIcon": true, "spin": false, "text": 11, "textColor": "white"}
+            )
+            marker_6319c727e793aa3ddb613b6cbf1b5ed1.setIcon(beautify_icon_11f6793e736998f048ed65f376035f06);
+        
+    
+        var popup_80e1926e2e1dbbc60bad7249b80c7cd9 = L.popup({"maxWidth": 380});
+
+        
+            var html_1e0f58ea82eace2656c58a9d3763c6ac = $(`<div id="html_1e0f58ea82eace2656c58a9d3763c6ac" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Georgia, serif; font-size: 14px; line-height:1.35">       <div style="font-weight:700; font-size:16px; margin-bottom:4px;">Norwalk, CT — Betts’s</div>       <div style="color:#333; margin-bottom:6px;"><i>May 4, 1775</i></div>       <div style="margin-bottom:6px;">Documented at “Betts’s of Norwalk.” <a href="https://www.masshist.org/digitaladams/archive/doc?id=D22B" target="_blank">MHS</a>.</div>       <div style="font-size:12px; color:#666;">Seq: 11</div>     </div>     </div>`)[0];
+            popup_80e1926e2e1dbbc60bad7249b80c7cd9.setContent(html_1e0f58ea82eace2656c58a9d3763c6ac);
+        
+
+        marker_6319c727e793aa3ddb613b6cbf1b5ed1.bindPopup(popup_80e1926e2e1dbbc60bad7249b80c7cd9)
+        ;
+
+        
+    
+    
+            marker_6319c727e793aa3ddb613b6cbf1b5ed1.bindTooltip(
+                `<div>
+                     Norwalk, CT — Betts’s
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_786efbccfbe9141461ba41892cdbe9ad = L.marker(
+                [41.0534, -73.5387],
+                {}
+            ).addTo(map_e5d0a09c8166ec892ac5680857d1640f);
+        
+    
+            var beautify_icon_5957a8dc93ad4fcc36ea216eca63d100 = new L.BeautifyIcon.icon(
+                {"backgroundColor": "#0b5", "borderColor": "#0b5", "borderWidth": 3, "iconShape": "marker", "innerIconStyle": "", "isAlphaNumericIcon": true, "spin": false, "text": 12, "textColor": "white"}
+            )
+            marker_786efbccfbe9141461ba41892cdbe9ad.setIcon(beautify_icon_5957a8dc93ad4fcc36ea216eca63d100);
+        
+    
+        var popup_7669461190ed2ecb69c72e3a70b20ad2 = L.popup({"maxWidth": 380});
+
+        
+            var html_15e8626963b6feba615ca8ecbfefbd9e = $(`<div id="html_15e8626963b6feba615ca8ecbfefbd9e" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Georgia, serif; font-size: 14px; line-height:1.35">       <div style="font-weight:700; font-size:16px; margin-bottom:4px;">Stamford, CT — Fitch’s</div>       <div style="color:#333; margin-bottom:6px;"><i>May 5, 1775</i></div>       <div style="margin-bottom:6px;">Expense entry at “Fitch’s of Stamford.” <a href="https://www.masshist.org/digitaladams/archive/doc?id=D22B" target="_blank">MHS</a>.</div>       <div style="font-size:12px; color:#666;">Seq: 12</div>     </div>     </div>`)[0];
+            popup_7669461190ed2ecb69c72e3a70b20ad2.setContent(html_15e8626963b6feba615ca8ecbfefbd9e);
+        
+
+        marker_786efbccfbe9141461ba41892cdbe9ad.bindPopup(popup_7669461190ed2ecb69c72e3a70b20ad2)
+        ;
+
+        
+    
+    
+            marker_786efbccfbe9141461ba41892cdbe9ad.bindTooltip(
+                `<div>
+                     Stamford, CT — Fitch’s
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_249dc7462e60e6a1b25edaceb7218ef7 = L.marker(
+                [41.0362, -73.6136],
+                {}
+            ).addTo(map_e5d0a09c8166ec892ac5680857d1640f);
+        
+    
+            var beautify_icon_d87b160f35e67cf114ab2ebdd4186db4 = new L.BeautifyIcon.icon(
+                {"backgroundColor": "#0b5", "borderColor": "#0b5", "borderWidth": 3, "iconShape": "marker", "innerIconStyle": "", "isAlphaNumericIcon": true, "spin": false, "text": 13, "textColor": "white"}
+            )
+            marker_249dc7462e60e6a1b25edaceb7218ef7.setIcon(beautify_icon_d87b160f35e67cf114ab2ebdd4186db4);
+        
+    
+        var popup_78bf0e755c8249a65390c314e448b799 = L.popup({"maxWidth": 380});
+
+        
+            var html_59d6fb9b077c49241bb5ab35bcc7eb02 = $(`<div id="html_59d6fb9b077c49241bb5ab35bcc7eb02" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Georgia, serif; font-size: 14px; line-height:1.35">       <div style="font-weight:700; font-size:16px; margin-bottom:4px;">Horse Neck (Greenwich), CT — Knapp’s</div>       <div style="color:#333; margin-bottom:6px;"><i>May 5–6, 1775</i></div>       <div style="margin-bottom:6px;">Documented at “Knaps of Horse Neck.” <a href="https://www.masshist.org/digitaladams/archive/doc?id=D22B" target="_blank">MHS</a>.</div>       <div style="font-size:12px; color:#666;">Seq: 13</div>     </div>     </div>`)[0];
+            popup_78bf0e755c8249a65390c314e448b799.setContent(html_59d6fb9b077c49241bb5ab35bcc7eb02);
+        
+
+        marker_249dc7462e60e6a1b25edaceb7218ef7.bindPopup(popup_78bf0e755c8249a65390c314e448b799)
+        ;
+
+        
+    
+    
+            marker_249dc7462e60e6a1b25edaceb7218ef7.bindTooltip(
+                `<div>
+                     Horse Neck (Greenwich), CT — Knapp’s
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d215f85ec1ef31b1e7c33ebfc829fe7b = L.marker(
+                [41.033, -73.7629],
+                {}
+            ).addTo(map_e5d0a09c8166ec892ac5680857d1640f);
+        
+    
+            var beautify_icon_337573a02d3e22bc924cbce2166f1585 = new L.BeautifyIcon.icon(
+                {"backgroundColor": "#0b5", "borderColor": "#0b5", "borderWidth": 3, "iconShape": "marker", "innerIconStyle": "", "isAlphaNumericIcon": true, "spin": false, "text": 14, "textColor": "white"}
+            )
+            marker_d215f85ec1ef31b1e7c33ebfc829fe7b.setIcon(beautify_icon_337573a02d3e22bc924cbce2166f1585);
+        
+    
+        var popup_64fd9cf3f20c402ce49a9fb5f95187a2 = L.popup({"maxWidth": 380});
+
+        
+            var html_2e39fd19f5afe7e93aef8af11b61294b = $(`<div id="html_2e39fd19f5afe7e93aef8af11b61294b" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Georgia, serif; font-size: 14px; line-height:1.35">       <div style="font-weight:700; font-size:16px; margin-bottom:4px;">White Plains, NY — Bull’s</div>       <div style="color:#333; margin-bottom:6px;"><i>May 6, 1775</i></div>       <div style="margin-bottom:6px;">Expense entry at “Bulls of White Plains.” <a href="https://www.masshist.org/digitaladams/archive/doc?id=D22B" target="_blank">MHS</a>.</div>       <div style="font-size:12px; color:#666;">Seq: 14</div>     </div>     </div>`)[0];
+            popup_64fd9cf3f20c402ce49a9fb5f95187a2.setContent(html_2e39fd19f5afe7e93aef8af11b61294b);
+        
+
+        marker_d215f85ec1ef31b1e7c33ebfc829fe7b.bindPopup(popup_64fd9cf3f20c402ce49a9fb5f95187a2)
+        ;
+
+        
+    
+    
+            marker_d215f85ec1ef31b1e7c33ebfc829fe7b.bindTooltip(
+                `<div>
+                     White Plains, NY — Bull’s
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_1a027d4576f3d25b0ceff17a1c5db23e = L.marker(
+                [41.0146, -73.8726],
+                {}
+            ).addTo(map_e5d0a09c8166ec892ac5680857d1640f);
+        
+    
+            var beautify_icon_3b3354cd0ef260855b746a470055bf92 = new L.BeautifyIcon.icon(
+                {"backgroundColor": "#0b5", "borderColor": "#0b5", "borderWidth": 3, "iconShape": "marker", "innerIconStyle": "", "isAlphaNumericIcon": true, "spin": false, "text": 15, "textColor": "white"}
+            )
+            marker_1a027d4576f3d25b0ceff17a1c5db23e.setIcon(beautify_icon_3b3354cd0ef260855b746a470055bf92);
+        
+    
+        var popup_df1b1e3227e9e4cc030f6fef4a38311b = L.popup({"maxWidth": 380});
+
+        
+            var html_4e0f77e52503a7beb227f232e75abbb0 = $(`<div id="html_4e0f77e52503a7beb227f232e75abbb0" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Georgia, serif; font-size: 14px; line-height:1.35">       <div style="font-weight:700; font-size:16px; margin-bottom:4px;">Dobbs Ferry, NY — Jasper the Ferryman</div>       <div style="color:#333; margin-bottom:6px;"><i>May 6–7, 1775</i></div>       <div style="margin-bottom:6px;">Entry “jasper the Ferryman, at Dobbs Ferry for Dinners and Ferryge.” <a href="https://www.masshist.org/digitaladams/archive/doc?id=D22B" target="_blank">MHS</a>.</div>       <div style="font-size:12px; color:#666;">Seq: 15</div>     </div>     </div>`)[0];
+            popup_df1b1e3227e9e4cc030f6fef4a38311b.setContent(html_4e0f77e52503a7beb227f232e75abbb0);
+        
+
+        marker_1a027d4576f3d25b0ceff17a1c5db23e.bindPopup(popup_df1b1e3227e9e4cc030f6fef4a38311b)
+        ;
+
+        
+    
+    
+            marker_1a027d4576f3d25b0ceff17a1c5db23e.bindTooltip(
+                `<div>
+                     Dobbs Ferry, NY — Jasper the Ferryman
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_208d301418589083b11b9e7558808afa = L.marker(
+                [40.8859, -74.0435],
+                {}
+            ).addTo(map_e5d0a09c8166ec892ac5680857d1640f);
+        
+    
+            var beautify_icon_5701fad3cc1687b4946c34c1863e531b = new L.BeautifyIcon.icon(
+                {"backgroundColor": "#0b5", "borderColor": "#0b5", "borderWidth": 3, "iconShape": "marker", "innerIconStyle": "", "isAlphaNumericIcon": true, "spin": false, "text": 16, "textColor": "white"}
+            )
+            marker_208d301418589083b11b9e7558808afa.setIcon(beautify_icon_5701fad3cc1687b4946c34c1863e531b);
+        
+    
+        var popup_17c0fcf59b0b36f578032787e94c2ca2 = L.popup({"maxWidth": 380});
+
+        
+            var html_75f6f32f59b8d83c9cc51b9f90e37a34 = $(`<div id="html_75f6f32f59b8d83c9cc51b9f90e37a34" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Georgia, serif; font-size: 14px; line-height:1.35">       <div style="font-weight:700; font-size:16px; margin-bottom:4px;">Hackensack, NJ — Mrs. Watson’s</div>       <div style="color:#333; margin-bottom:6px;"><i>May 7, 1775</i></div>       <div style="margin-bottom:6px;">Documented at “Mrs. Watsons at Hackin Sack.” <a href="https://www.masshist.org/digitaladams/archive/doc?id=D22B" target="_blank">MHS</a>.</div>       <div style="font-size:12px; color:#666;">Seq: 16</div>     </div>     </div>`)[0];
+            popup_17c0fcf59b0b36f578032787e94c2ca2.setContent(html_75f6f32f59b8d83c9cc51b9f90e37a34);
+        
+
+        marker_208d301418589083b11b9e7558808afa.bindPopup(popup_17c0fcf59b0b36f578032787e94c2ca2)
+        ;
+
+        
+    
+    
+            marker_208d301418589083b11b9e7558808afa.bindTooltip(
+                `<div>
+                     Hackensack, NJ — Mrs. Watson’s
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_89c81e3c3ba939465b433f095157a665 = L.marker(
+                [40.7357, -74.1724],
+                {}
+            ).addTo(map_e5d0a09c8166ec892ac5680857d1640f);
+        
+    
+            var beautify_icon_1d67579b1d041795c748373f62421fb4 = new L.BeautifyIcon.icon(
+                {"backgroundColor": "#0b5", "borderColor": "#0b5", "borderWidth": 3, "iconShape": "marker", "innerIconStyle": "", "isAlphaNumericIcon": true, "spin": false, "text": 17, "textColor": "white"}
+            )
+            marker_89c81e3c3ba939465b433f095157a665.setIcon(beautify_icon_1d67579b1d041795c748373f62421fb4);
+        
+    
+        var popup_bbc387010c91edb78a93e156c8cc5289 = L.popup({"maxWidth": 380});
+
+        
+            var html_e178e34f49426fb34386b9a51381cb5a = $(`<div id="html_e178e34f49426fb34386b9a51381cb5a" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Georgia, serif; font-size: 14px; line-height:1.35">       <div style="font-weight:700; font-size:16px; margin-bottom:4px;">Newark, NJ — Pierson’s</div>       <div style="color:#333; margin-bottom:6px;"><i>May 7, 1775</i></div>       <div style="margin-bottom:6px;">Expense entry at “Piersons of Newark.” <a href="https://www.masshist.org/digitaladams/archive/doc?id=D22B" target="_blank">MHS</a>.</div>       <div style="font-size:12px; color:#666;">Seq: 17</div>     </div>     </div>`)[0];
+            popup_bbc387010c91edb78a93e156c8cc5289.setContent(html_e178e34f49426fb34386b9a51381cb5a);
+        
+
+        marker_89c81e3c3ba939465b433f095157a665.bindPopup(popup_bbc387010c91edb78a93e156c8cc5289)
+        ;
+
+        
+    
+    
+            marker_89c81e3c3ba939465b433f095157a665.bindTooltip(
+                `<div>
+                     Newark, NJ — Pierson’s
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_8b128f91be1d86f2921b998078e52ed4 = L.marker(
+                [40.66399, -74.2107],
+                {}
+            ).addTo(map_e5d0a09c8166ec892ac5680857d1640f);
+        
+    
+            var beautify_icon_8d2b85e57a955856dc11daa0c096b520 = new L.BeautifyIcon.icon(
+                {"backgroundColor": "#0b5", "borderColor": "#0b5", "borderWidth": 3, "iconShape": "marker", "innerIconStyle": "", "isAlphaNumericIcon": true, "spin": false, "text": 18, "textColor": "white"}
+            )
+            marker_8b128f91be1d86f2921b998078e52ed4.setIcon(beautify_icon_8d2b85e57a955856dc11daa0c096b520);
+        
+    
+        var popup_0556c16f1739f17303b7bfaca322b61c = L.popup({"maxWidth": 380});
+
+        
+            var html_f365eee616fc2bbd4da05f17d3085b70 = $(`<div id="html_f365eee616fc2bbd4da05f17d3085b70" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Georgia, serif; font-size: 14px; line-height:1.35">       <div style="font-weight:700; font-size:16px; margin-bottom:4px;">Elizabethtown, NJ — Graham’s / horse-shoeing</div>       <div style="color:#333; margin-bottom:6px;"><i>May 7–8, 1775</i></div>       <div style="margin-bottom:6px;">Entries for shoeing and “Grahams Elizabeth Town.” <a href="https://www.masshist.org/digitaladams/archive/doc?id=D22B" target="_blank">MHS</a>.</div>       <div style="font-size:12px; color:#666;">Seq: 18</div>     </div>     </div>`)[0];
+            popup_0556c16f1739f17303b7bfaca322b61c.setContent(html_f365eee616fc2bbd4da05f17d3085b70);
+        
+
+        marker_8b128f91be1d86f2921b998078e52ed4.bindPopup(popup_0556c16f1739f17303b7bfaca322b61c)
+        ;
+
+        
+    
+    
+            marker_8b128f91be1d86f2921b998078e52ed4.bindTooltip(
+                `<div>
+                     Elizabethtown, NJ — Graham’s / horse-shoeing
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_fee73af81c3668d7eda337752e9e7e43 = L.marker(
+                [40.5545, -74.2894],
+                {}
+            ).addTo(map_e5d0a09c8166ec892ac5680857d1640f);
+        
+    
+            var beautify_icon_59c823bcc5db218c5f765af34e266d9a = new L.BeautifyIcon.icon(
+                {"backgroundColor": "#0b5", "borderColor": "#0b5", "borderWidth": 3, "iconShape": "marker", "innerIconStyle": "", "isAlphaNumericIcon": true, "spin": false, "text": 19, "textColor": "white"}
+            )
+            marker_fee73af81c3668d7eda337752e9e7e43.setIcon(beautify_icon_59c823bcc5db218c5f765af34e266d9a);
+        
+    
+        var popup_ac153b490583fc2c2cf3d586e145e4a1 = L.popup({"maxWidth": 380});
+
+        
+            var html_95992d08698645805cd4a1446f8884d9 = $(`<div id="html_95992d08698645805cd4a1446f8884d9" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Georgia, serif; font-size: 14px; line-height:1.35">       <div style="font-weight:700; font-size:16px; margin-bottom:4px;">Woodbridge, NJ — Dawson’s</div>       <div style="color:#333; margin-bottom:6px;"><i>May 8, 1775</i></div>       <div style="margin-bottom:6px;">Documented at “Woodbridge Dawsons.” <a href="https://www.masshist.org/digitaladams/archive/doc?id=D22B" target="_blank">MHS</a>.</div>       <div style="font-size:12px; color:#666;">Seq: 19</div>     </div>     </div>`)[0];
+            popup_ac153b490583fc2c2cf3d586e145e4a1.setContent(html_95992d08698645805cd4a1446f8884d9);
+        
+
+        marker_fee73af81c3668d7eda337752e9e7e43.bindPopup(popup_ac153b490583fc2c2cf3d586e145e4a1)
+        ;
+
+        
+    
+    
+            marker_fee73af81c3668d7eda337752e9e7e43.bindTooltip(
+                `<div>
+                     Woodbridge, NJ — Dawson’s
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_507a7fdae68819ad6e9e5a4d99d3d05d = L.marker(
+                [40.4862, -74.4518],
+                {}
+            ).addTo(map_e5d0a09c8166ec892ac5680857d1640f);
+        
+    
+            var beautify_icon_a1682530475d6fcc5a0a1733e93e0fa9 = new L.BeautifyIcon.icon(
+                {"backgroundColor": "#0b5", "borderColor": "#0b5", "borderWidth": 3, "iconShape": "marker", "innerIconStyle": "", "isAlphaNumericIcon": true, "spin": false, "text": 20, "textColor": "white"}
+            )
+            marker_507a7fdae68819ad6e9e5a4d99d3d05d.setIcon(beautify_icon_a1682530475d6fcc5a0a1733e93e0fa9);
+        
+    
+        var popup_4600f27e2aec086d6a43c3e9fe5b37a5 = L.popup({"maxWidth": 380});
+
+        
+            var html_6ad39f13ec862a5e11274811473851b9 = $(`<div id="html_6ad39f13ec862a5e11274811473851b9" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Georgia, serif; font-size: 14px; line-height:1.35">       <div style="font-weight:700; font-size:16px; margin-bottom:4px;">New Brunswick, NJ — Farmer’s & Ferry</div>       <div style="color:#333; margin-bottom:6px;"><i>May 8, 1775</i></div>       <div style="margin-bottom:6px;">Entry “Brunswick, Farmers, and at the Ferry.” <a href="https://www.masshist.org/digitaladams/archive/doc?id=D22B" target="_blank">MHS</a>.</div>       <div style="font-size:12px; color:#666;">Seq: 20</div>     </div>     </div>`)[0];
+            popup_4600f27e2aec086d6a43c3e9fe5b37a5.setContent(html_6ad39f13ec862a5e11274811473851b9);
+        
+
+        marker_507a7fdae68819ad6e9e5a4d99d3d05d.bindPopup(popup_4600f27e2aec086d6a43c3e9fe5b37a5)
+        ;
+
+        
+    
+    
+            marker_507a7fdae68819ad6e9e5a4d99d3d05d.bindTooltip(
+                `<div>
+                     New Brunswick, NJ — Farmer’s & Ferry
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_72de9f6b979abf35e12a1550c75cf007 = L.marker(
+                [40.4009, -74.5899],
+                {}
+            ).addTo(map_e5d0a09c8166ec892ac5680857d1640f);
+        
+    
+            var beautify_icon_93bd21c4a0ad970e80044571e5a34fa4 = new L.BeautifyIcon.icon(
+                {"backgroundColor": "#0b5", "borderColor": "#0b5", "borderWidth": 3, "iconShape": "marker", "innerIconStyle": "", "isAlphaNumericIcon": true, "spin": false, "text": 21, "textColor": "white"}
+            )
+            marker_72de9f6b979abf35e12a1550c75cf007.setIcon(beautify_icon_93bd21c4a0ad970e80044571e5a34fa4);
+        
+    
+        var popup_63ce60ce56775722f80a4a6a980f3632 = L.popup({"maxWidth": 380});
+
+        
+            var html_efd612b751dc39f65487a02bf54f89b9 = $(`<div id="html_efd612b751dc39f65487a02bf54f89b9" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Georgia, serif; font-size: 14px; line-height:1.35">       <div style="font-weight:700; font-size:16px; margin-bottom:4px;">Ten Mile Run, NJ — Jones’s</div>       <div style="color:#333; margin-bottom:6px;"><i>May 9, 1775</i></div>       <div style="margin-bottom:6px;">Expense entry at “Jones’s at Ten mile run.” <a href="https://www.masshist.org/digitaladams/archive/doc?id=D22B" target="_blank">MHS</a>.</div>       <div style="font-size:12px; color:#666;">Seq: 21</div>     </div>     </div>`)[0];
+            popup_63ce60ce56775722f80a4a6a980f3632.setContent(html_efd612b751dc39f65487a02bf54f89b9);
+        
+
+        marker_72de9f6b979abf35e12a1550c75cf007.bindPopup(popup_63ce60ce56775722f80a4a6a980f3632)
+        ;
+
+        
+    
+    
+            marker_72de9f6b979abf35e12a1550c75cf007.bindTooltip(
+                `<div>
+                     Ten Mile Run, NJ — Jones’s
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c45ff46086d8e77332627475c5d15101 = L.marker(
+                [40.3573, -74.6672],
+                {}
+            ).addTo(map_e5d0a09c8166ec892ac5680857d1640f);
+        
+    
+            var beautify_icon_100a8e6abe3c28997bd7390f0ec5005f = new L.BeautifyIcon.icon(
+                {"backgroundColor": "#0b5", "borderColor": "#0b5", "borderWidth": 3, "iconShape": "marker", "innerIconStyle": "", "isAlphaNumericIcon": true, "spin": false, "text": 22, "textColor": "white"}
+            )
+            marker_c45ff46086d8e77332627475c5d15101.setIcon(beautify_icon_100a8e6abe3c28997bd7390f0ec5005f);
+        
+    
+        var popup_b2204463d9b216d10a334c25d9d3c0a3 = L.popup({"maxWidth": 380});
+
+        
+            var html_9763af68ca5d3ebbeec10d30a0ec09c4 = $(`<div id="html_9763af68ca5d3ebbeec10d30a0ec09c4" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Georgia, serif; font-size: 14px; line-height:1.35">       <div style="font-weight:700; font-size:16px; margin-bottom:4px;">Princeton, NJ</div>       <div style="color:#333; margin-bottom:6px;"><i>May 9, 1775</i></div>       <div style="margin-bottom:6px;">College town pass-through; explicit expense line for “Princetown.” <a href="https://www.masshist.org/digitaladams/archive/doc?id=D22B" target="_blank">MHS</a>.</div>       <div style="font-size:12px; color:#666;">Seq: 22</div>     </div>     </div>`)[0];
+            popup_b2204463d9b216d10a334c25d9d3c0a3.setContent(html_9763af68ca5d3ebbeec10d30a0ec09c4);
+        
+
+        marker_c45ff46086d8e77332627475c5d15101.bindPopup(popup_b2204463d9b216d10a334c25d9d3c0a3)
+        ;
+
+        
+    
+    
+            marker_c45ff46086d8e77332627475c5d15101.bindTooltip(
+                `<div>
+                     Princeton, NJ
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a2b86cf2d4848a4dec01365cbd2f74a4 = L.marker(
+                [40.2171, -74.7429],
+                {}
+            ).addTo(map_e5d0a09c8166ec892ac5680857d1640f);
+        
+    
+            var beautify_icon_461b8e878c939bac2a4bf1ff70cfdd3a = new L.BeautifyIcon.icon(
+                {"backgroundColor": "#0b5", "borderColor": "#0b5", "borderWidth": 3, "iconShape": "marker", "innerIconStyle": "", "isAlphaNumericIcon": true, "spin": false, "text": 23, "textColor": "white"}
+            )
+            marker_a2b86cf2d4848a4dec01365cbd2f74a4.setIcon(beautify_icon_461b8e878c939bac2a4bf1ff70cfdd3a);
+        
+    
+        var popup_fca8690cf3025f9bb4e47d5d74c002fc = L.popup({"maxWidth": 380});
+
+        
+            var html_41969f108d2fe9c5a66855e8839d7692 = $(`<div id="html_41969f108d2fe9c5a66855e8839d7692" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Georgia, serif; font-size: 14px; line-height:1.35">       <div style="font-weight:700; font-size:16px; margin-bottom:4px;">Trenton, NJ</div>       <div style="color:#333; margin-bottom:6px;"><i>May 9, 1775</i></div>       <div style="margin-bottom:6px;">Expense entry at “Trenton.” <a href="https://www.masshist.org/digitaladams/archive/doc?id=D22B" target="_blank">MHS</a>.</div>       <div style="font-size:12px; color:#666;">Seq: 23</div>     </div>     </div>`)[0];
+            popup_fca8690cf3025f9bb4e47d5d74c002fc.setContent(html_41969f108d2fe9c5a66855e8839d7692);
+        
+
+        marker_a2b86cf2d4848a4dec01365cbd2f74a4.bindPopup(popup_fca8690cf3025f9bb4e47d5d74c002fc)
+        ;
+
+        
+    
+    
+            marker_a2b86cf2d4848a4dec01365cbd2f74a4.bindTooltip(
+                `<div>
+                     Trenton, NJ
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_285cd950968333882eaae6d2cb453455 = L.marker(
+                [40.1007, -74.8518],
+                {}
+            ).addTo(map_e5d0a09c8166ec892ac5680857d1640f);
+        
+    
+            var beautify_icon_b0569ee3ca52bfaa8cfdc8418ea7a9f5 = new L.BeautifyIcon.icon(
+                {"backgroundColor": "#0b5", "borderColor": "#0b5", "borderWidth": 3, "iconShape": "marker", "innerIconStyle": "", "isAlphaNumericIcon": true, "spin": false, "text": 24, "textColor": "white"}
+            )
+            marker_285cd950968333882eaae6d2cb453455.setIcon(beautify_icon_b0569ee3ca52bfaa8cfdc8418ea7a9f5);
+        
+    
+        var popup_810f0638e8650f2d65de9b1c38cbd0f0 = L.popup({"maxWidth": 380});
+
+        
+            var html_b9c4a65722679275b34d9453d7ff4e56 = $(`<div id="html_b9c4a65722679275b34d9453d7ff4e56" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Georgia, serif; font-size: 14px; line-height:1.35">       <div style="font-weight:700; font-size:16px; margin-bottom:4px;">Bristol, PA — Priestly’s</div>       <div style="color:#333; margin-bottom:6px;"><i>May 9, 1775</i></div>       <div style="margin-bottom:6px;">Expense entry “Priestly’s in Bristol.” <a href="https://www.masshist.org/digitaladams/archive/doc?id=D22B" target="_blank">MHS</a>.</div>       <div style="font-size:12px; color:#666;">Seq: 24</div>     </div>     </div>`)[0];
+            popup_810f0638e8650f2d65de9b1c38cbd0f0.setContent(html_b9c4a65722679275b34d9453d7ff4e56);
+        
+
+        marker_285cd950968333882eaae6d2cb453455.bindPopup(popup_810f0638e8650f2d65de9b1c38cbd0f0)
+        ;
+
+        
+    
+    
+            marker_285cd950968333882eaae6d2cb453455.bindTooltip(
+                `<div>
+                     Bristol, PA — Priestly’s
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_abbdc6c834838dd2f1d733257c7a5492 = L.marker(
+                [40.1438, -74.9152],
+                {}
+            ).addTo(map_e5d0a09c8166ec892ac5680857d1640f);
+        
+    
+            var beautify_icon_f4a15c552bf7d6459a1b432593b43b0b = new L.BeautifyIcon.icon(
+                {"backgroundColor": "#0b5", "borderColor": "#0b5", "borderWidth": 3, "iconShape": "marker", "innerIconStyle": "", "isAlphaNumericIcon": true, "spin": false, "text": 25, "textColor": "white"}
+            )
+            marker_abbdc6c834838dd2f1d733257c7a5492.setIcon(beautify_icon_f4a15c552bf7d6459a1b432593b43b0b);
+        
+    
+        var popup_41c848238302fad11ada00e363d33132 = L.popup({"maxWidth": 380});
+
+        
+            var html_fb02346196f957f161ba156480f5303f = $(`<div id="html_fb02346196f957f161ba156480f5303f" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Georgia, serif; font-size: 14px; line-height:1.35">       <div style="font-weight:700; font-size:16px; margin-bottom:4px;">Neshaminy (Shammony) Ferry, PA</div>       <div style="color:#333; margin-bottom:6px;"><i>May 9, 1775</i></div>       <div style="margin-bottom:6px;">“Shammony Ferry” noted before final approach. <a href="https://www.masshist.org/digitaladams/archive/doc?id=D22B" target="_blank">MHS</a>.</div>       <div style="font-size:12px; color:#666;">Seq: 25</div>     </div>     </div>`)[0];
+            popup_41c848238302fad11ada00e363d33132.setContent(html_fb02346196f957f161ba156480f5303f);
+        
+
+        marker_abbdc6c834838dd2f1d733257c7a5492.bindPopup(popup_41c848238302fad11ada00e363d33132)
+        ;
+
+        
+    
+    
+            marker_abbdc6c834838dd2f1d733257c7a5492.bindTooltip(
+                `<div>
+                     Neshaminy (Shammony) Ferry, PA
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d7b8311ce5f743a34d65603bb366660f = L.marker(
+                [40.014, -75.0802],
+                {}
+            ).addTo(map_e5d0a09c8166ec892ac5680857d1640f);
+        
+    
+            var beautify_icon_a1aa8086b3d7c1d8d1e95f98b6ec5d13 = new L.BeautifyIcon.icon(
+                {"backgroundColor": "#0b5", "borderColor": "#0b5", "borderWidth": 3, "iconShape": "marker", "innerIconStyle": "", "isAlphaNumericIcon": true, "spin": false, "text": 26, "textColor": "white"}
+            )
+            marker_d7b8311ce5f743a34d65603bb366660f.setIcon(beautify_icon_a1aa8086b3d7c1d8d1e95f98b6ec5d13);
+        
+    
+        var popup_683954d45a12e8e099a2638e1984efeb = L.popup({"maxWidth": 380});
+
+        
+            var html_2153627a4dc06227cc10747080e08c41 = $(`<div id="html_2153627a4dc06227cc10747080e08c41" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Georgia, serif; font-size: 14px; line-height:1.35">       <div style="font-weight:700; font-size:16px; margin-bottom:4px;">Frankford (Philadelphia County), PA — Militia escort</div>       <div style="color:#333; margin-bottom:6px;"><i>May 10, 1775</i></div>       <div style="margin-bottom:6px;">Met by militia for ceremonial entry into the city. <a href="https://founders.archives.gov/documents/Adams/01-02-02-0005-0001" target="_blank">Founders Online</a>.</div>       <div style="font-size:12px; color:#666;">Seq: 26</div>     </div>     </div>`)[0];
+            popup_683954d45a12e8e099a2638e1984efeb.setContent(html_2153627a4dc06227cc10747080e08c41);
+        
+
+        marker_d7b8311ce5f743a34d65603bb366660f.bindPopup(popup_683954d45a12e8e099a2638e1984efeb)
+        ;
+
+        
+    
+    
+            marker_d7b8311ce5f743a34d65603bb366660f.bindTooltip(
+                `<div>
+                     Frankford (Philadelphia County), PA — Militia escort
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_0b781a5ae1485b4ec406fe3526629e69 = L.marker(
+                [39.9496, -75.1446],
+                {}
+            ).addTo(map_e5d0a09c8166ec892ac5680857d1640f);
+        
+    
+            var beautify_icon_3475f2af4975e366ea28fa1bee028060 = new L.BeautifyIcon.icon(
+                {"backgroundColor": "#0b5", "borderColor": "#0b5", "borderWidth": 3, "iconShape": "marker", "innerIconStyle": "", "isAlphaNumericIcon": true, "spin": false, "text": 27, "textColor": "white"}
+            )
+            marker_0b781a5ae1485b4ec406fe3526629e69.setIcon(beautify_icon_3475f2af4975e366ea28fa1bee028060);
+        
+    
+        var popup_ab99c4a0d5320f5fbdb49288d1d759e1 = L.popup({"maxWidth": 380});
+
+        
+            var html_259116759be796305e480fa546ea6efe = $(`<div id="html_259116759be796305e480fa546ea6efe" style="width: 100.0%; height: 100.0%;">     <div style="font-family: Georgia, serif; font-size: 14px; line-height:1.35">       <div style="font-weight:700; font-size:16px; margin-bottom:4px;">Philadelphia, PA — City Tavern / State House</div>       <div style="color:#333; margin-bottom:6px;"><i>May 10, 1775</i></div>       <div style="margin-bottom:6px;">Arrive for the opening of the Second Continental Congress; dined at Mrs. Yard’s/City Tavern. <a href="https://founders.archives.gov/documents/Adams/01-02-02-0005-0001" target="_blank">Founders Online</a>.</div>       <div style="font-size:12px; color:#666;">Seq: 27</div>     </div>     </div>`)[0];
+            popup_ab99c4a0d5320f5fbdb49288d1d759e1.setContent(html_259116759be796305e480fa546ea6efe);
+        
+
+        marker_0b781a5ae1485b4ec406fe3526629e69.bindPopup(popup_ab99c4a0d5320f5fbdb49288d1d759e1)
+        ;
+
+        
+    
+    
+            marker_0b781a5ae1485b4ec406fe3526629e69.bindTooltip(
+                `<div>
+                     Philadelphia, PA — City Tavern / State House
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_401b7cb3770c981f15149bf42240d45c = L.polyline(
+                [[42.4528, -71.2223], [42.4495, -71.2316], [42.2626, -71.8023], [42.2437, -71.9929], [42.2109, -72.0962], [42.1015, -72.5898], [42.1251, -72.7495], [41.9829, -72.6506], [41.7658, -72.6734]],
+                {"bubblingMouseEvents": true, "color": "#1e3a8a", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#1e3a8a", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.9, "smoothFactor": 1.0, "stroke": true, "weight": 4}
+            ).addTo(map_e5d0a09c8166ec892ac5680857d1640f);
+        
+    
+            poly_line_401b7cb3770c981f15149bf42240d45c.bindTooltip(
+                `<div>
+                     Samuel Adams & John Hancock (to Hartford)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_8bb0a4c3cd9e2f8d82e160ca9450fa7e = L.polyline(
+                [[42.2223, -71.0012], [42.247, -71.1787], [42.0668, -71.3287], [41.824, -71.4128], [41.7004, -71.5376], [41.701, -72.157], [41.7658, -72.6734]],
+                {"bubblingMouseEvents": true, "color": "#991b1b", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#991b1b", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.9, "smoothFactor": 1.0, "stroke": true, "weight": 4}
+            ).addTo(map_e5d0a09c8166ec892ac5680857d1640f);
+        
+    
+            poly_line_8bb0a4c3cd9e2f8d82e160ca9450fa7e.bindTooltip(
+                `<div>
+                     John Adams (to Hartford)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_7daf96714e3c041242b3d494f5ba725e = L.polyline(
+                [[41.7143, -72.6526], [41.5623, -72.6506], [41.4504, -72.4601], [41.4812, -72.6815], [41.457, -72.8231], [41.3083, -72.9279], [41.2223, -73.0565], [41.1845, -73.1322], [41.1865, -73.1952], [41.1408, -73.2637], [41.1176, -73.4089], [41.0534, -73.5387], [41.0362, -73.6136], [41.033, -73.7629], [41.0146, -73.8726], [40.8859, -74.0435], [40.7357, -74.1724], [40.66399, -74.2107], [40.5545, -74.2894], [40.4862, -74.4518], [40.4009, -74.5899], [40.3573, -74.6672], [40.2171, -74.7429], [40.1007, -74.8518], [40.1438, -74.9152], [40.014, -75.0802], [39.9496, -75.1446]],
+                {"bubblingMouseEvents": true, "color": "#0b5", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#0b5", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.85, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(map_e5d0a09c8166ec892ac5680857d1640f);
+        
+    
+            poly_line_7daf96714e3c041242b3d494f5ba725e.bindTooltip(
+                `<div>
+                     Shared Corridor (Hartford → Philadelphia)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+</script>
+</html>
